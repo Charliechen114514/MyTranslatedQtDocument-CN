@@ -13,7 +13,7 @@ QString 类提供 Unicode 字符串。[更多的...](https://doc-qt-io.translate
 
 **注意：**该类中的所有函数都是[reentrant](https://doc-qt-io.translate.goog/qt-6/threads-reentrancy.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp)。
 
-## 公共类型
+## Public类型
 
 |       | **[ConstIterator](https://doc-qt-io.translate.goog/qt-6/qstring.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#ConstIterator-typedef)** |
 | ----- | ------------------------------------------------------------ |
@@ -33,7 +33,7 @@ QString 类提供 Unicode 字符串。[更多的...](https://doc-qt-io.translate
 |       | **[size_type](https://doc-qt-io.translate.goog/qt-6/qstring.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#size_type-typedef)** |
 |       | **[value_type](https://doc-qt-io.translate.goog/qt-6/qstring.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#value_type-typedef)** |
 
-## 公共职能
+## Public 方法
 
 |                                                              | **[QString](https://doc-qt-io.translate.goog/qt-6/qstring.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#QString)**() |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -324,7 +324,7 @@ QString 类提供 Unicode 字符串。[更多的...](https://doc-qt-io.translate
 | QString | **[number](https://doc-qt-io.translate.goog/qt-6/qstring.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#number-6)**(double *n*, char *format* = 'g', int *precision* = 6) |
 | QString | **[vasprintf](https://doc-qt-io.translate.goog/qt-6/qstring.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#vasprintf)**(const char **cformat*, va_list *ap*) |
 
-## 相关非会员
+## 相关的非成员函数
 
 | qsizetype     | **[erase](https://doc-qt-io.translate.goog/qt-6/qstring.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#erase-2)**(QString &*s*, const T &*t*) |
 | ------------- | ------------------------------------------------------------ |
@@ -467,7 +467,7 @@ QString提供[STL-style iterators](https://doc-qt-io.translate.goog/qt-6/contain
 
 **注意：**`const`当调用 QString 的任何非方法时，不能依赖 QString 上的迭代器以及对其中单个字符的引用保持有效。在调用非`const`方法之后访问此类迭代器或引用会导致未定义的行为。当需要类似迭代器的功能的稳定性时，您应该使用索引而不是迭代器，因为它们不依赖于 QString 的内部状态，因此不会失效。
 
-**注：**由于[implicit sharing](https://doc-qt-io.translate.goog/qt-6/implicit-sharing.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp)`const`，给定 QString 上使用的第一个非运算符或函数可能会导致它在内部执行其数据的深层复制。这将使字符串上的所有迭代器以及对其中单个字符的引用无效。在第一个非`const`运算符之后，修改 QString 的操作可能会完全（在重新分配的情况下）或部分使迭代器和引用无效，但其他方法（例如[begin](https://doc-qt-io.translate.goog/qt-6/qstring.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#begin)（） 或者[end](https://doc-qt-io.translate.goog/qt-6/qstring.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#end)（）） 将不会。在迭代器或引用失效后访问它会导致未定义的行为。
+**注：**由于[隐式共享](https://doc-qt-io.translate.goog/qt-6/implicit-sharing.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp)`const`，给定 QString 上使用的第一个非运算符或函数可能会导致它在内部执行其数据的深层复制。这将使字符串上的所有迭代器以及对其中单个字符的引用无效。在第一个非`const`运算符之后，修改 QString 的操作可能会完全（在重新分配的情况下）或部分使迭代器和引用无效，但其他方法（例如[begin](https://doc-qt-io.translate.goog/qt-6/qstring.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#begin)（） 或者[end](https://doc-qt-io.translate.goog/qt-6/qstring.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#end)（）） 将不会。在迭代器或引用失效后访问它会导致未定义的行为。
 
 一个常见的要求是从字符串中删除空格字符（'\n'、'\t'、' ' 等）。如果要删除 QString 两端的空格，请使用[trimmed](https://doc-qt-io.translate.goog/qt-6/qstring.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#trimmed)（） 功能。如果要删除字符串两端的空格并将多个连续的空格替换为字符串中的单个空格字符，请使用[simplified](https://doc-qt-io.translate.goog/qt-6/qstring.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#simplified)()。
 
@@ -611,7 +611,7 @@ QString 的最大大小取决于体系结构。大多数 64 位系统可以分�
 
 **也可以看看**[fromRawData](https://doc-qt-io.translate.goog/qt-6/qstring.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#fromRawData)(),[QChar](https://doc-qt-io.translate.goog/qt-6/qchar.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp),[QStringView](https://doc-qt-io.translate.goog/qt-6/qstringview.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp),[QLatin1StringView](https://doc-qt-io.translate.goog/qt-6/qlatin1stringview.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp)， 和[QByteArray](https://doc-qt-io.translate.goog/qt-6/qbytearray.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp)。
 
-## 会员类型文档
+## 成员类型文档
 
 ### QString::ConstIterator
 
