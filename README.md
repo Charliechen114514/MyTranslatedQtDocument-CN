@@ -1,2 +1,4 @@
 # MyTranslatedQtDocument-CN
-This is a repository that aims to translate Qt Document to Chinese by Google translation
+​		This is a repository that helps anyone who want to view Qt Document in Chinese, see Quick Guide.md to jump to the relevant Docs
+
+​		
