@@ -1,4 +1,4 @@
-#  QProgressBar Class
+ QProgressBar Class
 
 QProgressBar 小部件提供水平或垂直进度条。[更多的...](https://doc-qt-io.translate.goog/qt-6/qprogressbar.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#details)
 
@@ -22,7 +22,7 @@ QProgressBar 小部件提供水平或垂直进度条。[更多的...](https://do
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 |                                                              |                                                              |
 
-## 公共函数
+## 公共职能
 
 |                         | **[QProgressBar](https://doc-qt-io.translate.goog/qt-6/qprogressbar.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#QProgressBar)**(QWidget **parent* = nullptr) |
 | ----------------------- | ------------------------------------------------------------ |
@@ -44,13 +44,13 @@ QProgressBar 小部件提供水平或垂直进度条。[更多的...](https://do
 | QProgressBar::Direction | **[textDirection](https://doc-qt-io.translate.goog/qt-6/qprogressbar.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#textDirection-prop)**() const |
 | int                     | **[value](https://doc-qt-io.translate.goog/qt-6/qprogressbar.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#value-prop)**() const |
 
-## 重载的函数
+## 重新实施公共职能
 
 | virtual QSize | **[minimumSizeHint](https://doc-qt-io.translate.goog/qt-6/qprogressbar.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#minimumSizeHint)**() const override |
 | ------------- | ------------------------------------------------------------ |
 | virtual QSize | **[sizeHint](https://doc-qt-io.translate.goog/qt-6/qprogressbar.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#sizeHint)**() const override |
 
-## 公共槽
+## 公共老虎机
 
 | void | **[reset](https://doc-qt-io.translate.goog/qt-6/qprogressbar.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#reset)**() |
 | ---- | ------------------------------------------------------------ |
@@ -66,13 +66,13 @@ QProgressBar 小部件提供水平或垂直进度条。[更多的...](https://do
 | ---- | ------------------------------------------------------------ |
 |      |                                                              |
 
-## protected function 
+## 受保护的功能
 
 | virtual void | **[initStyleOption](https://doc-qt-io.translate.goog/qt-6/qprogressbar.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#initStyleOption)**(QStyleOptionProgressBar **option*) const |
 | ------------ | ------------------------------------------------------------ |
 |              |                                                              |
 
-## 重载的protected function 
+## 重新实现受保护的功能
 
 | virtual bool | **[event](https://doc-qt-io.translate.goog/qt-6/qprogressbar.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#event)**(QEvent **e*) override |
 | ------------ | ------------------------------------------------------------ |
@@ -80,7 +80,7 @@ QProgressBar 小部件提供水平或垂直进度条。[更多的...](https://do
 
 ## 详细说明
 
-![img](C:\Users\陈冠豪\Desktop\QtDoc\My Qt Doc\Basic C++ Class\P\QProcessBar\QProcessBar\windows-progressbar.png)
+![img](C:\Users\陈冠豪\Desktop\QtDoc\My Qt Doc\Basic C++ Class\P\QProcessBar\QProcessBar\windows-progressbar-1698752885833-1.png)
 
 进度条用于向用户指示操作的进度，并向他们保证应用程序仍在运行。
 
@@ -92,7 +92,7 @@ QProgressBar 小部件提供水平或垂直进度条。[更多的...](https://do
 
 **也可以看看**[QProgressDialog](https://doc-qt-io.translate.goog/qt-6/qprogressdialog.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp)。
 
-## 成员类型文档
+## 会员类型文档
 
 ### enum QProgressBar::Direction
 
@@ -260,7 +260,7 @@ QProgressBar 小部件提供水平或垂直进度条。[更多的...](https://do
 
 **也可以看看**[setRange](https://doc-qt-io.translate.goog/qt-6/qprogressbar.html?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp#setRange)()。
 
-### `[virtual]`QProgressBar::~QProgressBar()
+### `[virtual noexcept]`QProgressBar::~QProgressBar()
 
 析构函数。
 
